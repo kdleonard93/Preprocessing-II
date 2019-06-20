@@ -1,1 +1,17 @@
-// Mixins in here
+.center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-radius (@btn-radius){
+    border-radius: @btn-radius;
+}
+
+.button-mixin(@btn-size, @button-bg) {
+    .center();
+    font-size: @btn-size;
+    background-color: @button-bg;
+    color: @main-bg;
+    border: 1px dashed @navigation-border;  
+}
