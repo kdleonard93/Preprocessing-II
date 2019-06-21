@@ -65,9 +65,14 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    @media @phone {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
 
     button {
-      .button-mixin(@btn-size, @button-bg, @main-bg, @btn-padding);
+      .button-mixin(@btn-size, @btn-width, @button-bg, @main-bg, @btn-padding);
     }
   }
 }// home

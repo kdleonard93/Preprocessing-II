@@ -12,14 +12,16 @@
 }
 
 //Button Mixin
-.button-mixin(@btn-size, @button-bg, @main-bg, @btn-padding) {
+.button-mixin(@btn-size, @btn-width, @button-bg, @main-bg, @btn-padding) {
     .center;
     .btn-radius(10px);
     font-size: @btn-size;
+    width: @btn-width;
     background-color: @button-bg;
     color: @main-bg;
     border: 1px solid @navigation-border;
     padding:@btn-padding;
+    margin: 0 auto;
 }
 
 //Nav Mixin
