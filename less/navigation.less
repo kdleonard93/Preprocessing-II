@@ -19,15 +19,7 @@ nav {
 .nav{
     display: flex;
     align-items: center;
-
-    @media @phone {
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-
+    
     a {
         .nav-mixin(@nav-size, @font-color, @nav-padding);
         text-decoration: none;

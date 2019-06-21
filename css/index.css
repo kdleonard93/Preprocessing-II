@@ -194,13 +194,6 @@ nav {
   display: flex;
   align-items: center;
 }
-@media (max-width: 500px) {
-  .nav {
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .nav a {
   display: flex;
   justify-content: center;
