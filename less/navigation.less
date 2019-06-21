@@ -1,1 +1,35 @@
-// Navigation Styles here
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media @phone {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    
+    a {
+        .nav-mixin(@nav-size, @font-color, @nav-padding);
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
+

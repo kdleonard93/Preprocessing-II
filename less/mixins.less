@@ -1,1 +1,34 @@
-// Mixins in here
+//Center Mixin
+.center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-radius (@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+//Button Mixin
+.button-mixin(@btn-size, @btn-width, @button-bg, @main-bg, @btn-padding) {
+    .center;
+    .btn-radius(10px);
+    font-size: @btn-size;
+    width: @btn-width;
+    background-color: @button-bg;
+    color: @main-bg;
+    border: 1px solid @navigation-border;
+    padding:@btn-padding;
+    margin: 0 auto;
+}
+
+//Nav Mixin
+
+.nav-mixin(@nav-size, @font-color, @nav-padding){
+    .center;
+    font-size: @nav-size;
+    color: @font-color;
+    padding: @nav-padding;
+}
